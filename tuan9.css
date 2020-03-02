@@ -1,0 +1,1173 @@
+:root{
+    --maunau: #7e4c2b;
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smoty m 9
+    9oth;
+    overflow-x: hidden;
+}
+body{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+}
+.res{
+    display: none;   
+    overflow: hidden;
+}
+.mauvang{
+    position: fixed;
+    background-color: white;
+    height: fit-content;
+}
+header{
+    width: 100%;
+    z-index: 30;
+    position: relative;
+}
+header .header-w{
+    width: 100%;
+    z-index: 30;
+    position: relative;
+}
+header .header-w .top-bar{
+    background-color: #7e4c2b;
+    color: white;
+    min-height: 30px;
+    z-index: 11;
+    position: relative;
+    display: flex;
+}
+header .header-w .top-bar .container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    height: fit-content;
+    margin-top: 5px;
+}
+header .header-w .top-bar .container p{
+    font-size: .75em;
+    margin: 0;
+    height: fit-content;
+}
+header .header-w .top-bar .container ul{
+    list-style-type: none;
+    display: flex;
+    font-size: .75em;
+    height: fit-content;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    max-width: fit-content;
+    margin-left: auto;
+}
+header .header-w .top-bar .container ul li:hover{
+    opacity: 0.8;
+}
+header .header-w .top-bar .container ul li a{
+    color: white;
+    text-decoration: none;
+    margin-left: .3em;
+    margin-right: .3em;
+}
+header .header-w .head{
+    /*height: 125px;*/
+    height: fit-content;
+    z-index: 10;
+    position: relative;
+}
+header .header-w .head .container{
+    /*height: 100%;*/
+    height: fit-content;
+    max-width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .header-w .head .container .logo{
+    width: 250px;
+    margin-right: 30px;
+}
+header .header-w .head .container .logo a img{
+    max-height: 125px;
+    transition: 0.5s;
+}
+header .header-w .head .icon{
+    opacity: 0;
+    visibility: hidden;
+}
+header .header-w .head .chu{
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: 0px;
+    max-width: fit-content;
+    align-items: center;
+}
+header .header-w .head .chu li{
+    margin-left: 13px;
+    margin-right: 13px;
+    font-weight: 700;
+    color: rgba(102,102,102,0.85);
+    font-size: 1em;
+    position: relative;
+}
+header .header-w .head .chu li a{
+    color: rgba(102,102,102,0.85);
+    text-decoration: none;
+}
+header .header-w .head .chu li:hover a{
+    color: #bf262b;
+}
+header .header-w .head .chu li:hover i{
+    color: #bf262b;
+    cursor: pointer;
+}
+header .header-w .head .chu li .dropdown{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: auto;
+    right: -15px;
+}
+header .header-w .head .chu .children::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -11px;
+    border-bottom-color: #ddd;
+    border-width: 11px;
+    margin-left: -11px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+header .header-w .head .chu .children:hover::before{
+    opacity: 1;
+    visibility: visible;
+}
+header .header-w .head .chu .children::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    position: absolute;
+    left: 50%;
+    bottom: -11px;
+    border-bottom-color: white;
+    border-width: 8px;
+    margin-left: -8px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 11;
+}
+header .header-w .head .chu li:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    padding: 20px;
+    position: absolute;
+    top: 139%;
+    border: 2px solid #ddd;
+    z-index: 9;
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.15);
+}
+header .header-w .head .chu li .dropdown .search-form{
+    display: flex;
+    min-width: 260px;
+}
+header .header-w .head .chu li .dropdown .search-form .thanh{
+    flex: 1;
+}
+header .header-w .head .chu li .dropdown .search-form .thanh input{
+    width: 100%;
+    height: 2.507em;
+    border: 1px solid #ddd;
+    font-size: .97em;
+    padding: 0 .75em;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+header .header-w .head .chu li .dropdown .search-form .nut{
+    border: none;
+}
+header .header-w .head .chu li .dropdown .search-form .nut button{
+    background-color: #7e4c2b;
+    padding-left: .6em;
+    padding-right: .6em;
+    max-height: 100%;
+    height: 100%;
+    border: none;
+}
+header .header-w .head .chu li i{
+    font-weight: 600;
+    font-size: 17px;
+}
+header .header-w .head .chu li .dropdown .search-form .nut button i{
+    color: white;
+}
+.carousel{
+    position: relative;
+}
+.carousel .carousel-indicators{
+    position: absolute;
+    top: 94%;
+    left: 0%;
+}
+.carousel .carousel-indicators li{
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+}
+.carousel .carousel-inner img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+.carousel .carousel-control-prev{
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    left: 5%;
+    top: 50%;
+    opacity: 0;
+}
+.carousel .carousel-control-next{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    left: 94%;
+    top: 50%;
+    opacity: 0;
+}
+.carousel .carousel-control-prev .carousel-control-prev-icon{
+    width: 20px;
+    height: 20px;    
+}
+.carousel .carousel-control-next .carousel-control-next-icon{
+    width: 20px;
+    height: 20px;
+}
+.carousel:hover{
+    cursor: pointer;
+}
+.carousel:hover .carousel-control-prev{
+    opacity: 1;
+    transition: 0.8s;
+    left: 4%;
+}
+.carousel .carousel-control-prev:hover{
+    background-color: var(--maunau);
+    opacity: 1;
+    border: none;
+}
+.carousel:hover .carousel-control-next{
+    opacity: 1;
+    transition: 0.8s;
+    left:95%;
+}
+.carousel .carousel-control-next:hover{
+    background-color: var(--maunau);
+    border: none;
+    opacity: 1;
+}
+.row1{
+    background-image: url(http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/bg-pattern.jpg);
+    background-position: center;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 60px;
+}
+.row1 .main{
+    padding-bottom: 60px;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.row1 .left span{ 
+    color:#d9a868;
+    font-family: 'Charm', cursive;
+    font-size: 32px;
+}
+.row1 .left h2{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 15px;
+ }
+.row1 .left p{ 
+    font-size: 15px;
+    margin-bottom: 1.3em;
+    font-weight: 400;
+}
+.row1 .right img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: none;
+}
+#top-link{
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    transform: translateY(0);
+    margin-left: .12em;
+    margin-right: .12em;
+    min-width: 2.5em;
+    display: inline-block;
+    border: 2px solid currentColor;
+    background-color: transparent;
+    line-height: 2.19em;
+    color: currentColor;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    font-size: .97em;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    min-height: 2.5em;
+    opacity: 1;
+    pointer-events: inherit;
+    transition: 0.5s;
+}
+#top-link i{
+    font-size: 0.8em;
+    top: -1.5px;
+    line-height: 2.5;
+    font-weight: 600;
+    opacity: 0.6;
+}
+#top-link:hover{
+    border-color: #7e4c2b;
+    background-color: #7e4c2b;
+    opacity: 1;
+    cursor: pointer;
+}
+#top-link:hover i{
+    color: white;
+    opacity: 1.1;
+}
+.row2{
+    width: 100%;
+    max-width: 100%;
+}
+.row2 .tren{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.row2 .tren p{
+    font-size: 32px;
+    font-family: 'Charm';
+    color: #d9a868;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.row2 .tren h2{
+    font-size: 45px;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.3;
+}
+.row2 .tren .xanh{
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    max-width: 110px;
+    height: 2px;
+    background-color: rgb(126, 190, 197);
+    margin-left: auto;
+    margin-right: auto;
+}
+.row2 .than{
+    max-width: 1162.5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row2 .than .anh{
+    margin-bottom: 25px;
+    position: relative;
+    height: 314px;
+    width: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+    object-fit: cover;
+}
+.row2 .than .anh img{
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    max-width: 100%;
+    height: 314px;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.row2 .than .anh .den{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 314px;
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    transition: transform .3s,opacity .6s;
+}
+.row2 .than .anh:hover img{
+    transform: scale(1.1);
+    width: 100%;
+    height: 314px;
+    transition: 0.5s;
+}
+.row2 .than .anh:hover{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.row2 .than .anh:hover .chu{
+    opacity: 1.1;
+    bottom: 15px;
+    transition: 0.5s;
+}
+.row2 .than .anh .chu{
+    width: 167px;
+    height: 77px;
+    background-color: #FFF;
+    opacity: .95;
+    padding-top: 0.5em;
+    padding-right: 1.5em;
+    padding-bottom: 0.55em;
+    padding-left: 1.5em;
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 1px 1px 3px 0 rgba(0,0,0,0.1);
+    transition: 0.5s;
+}
+.row2 .than .anh .chu h3{
+    line-height: 1.3;
+    margin-top: .1em;
+    margin-bottom: .1em;
+    font-weight: 700;
+    font-size: 1.25em;
+    color: #555;
+    transition: 0.5s;
+}
+.row2 .than .anh .chu p{
+    margin-top: .1em;
+    margin-bottom: .1em;
+    font-size: 15px;
+    color: #333;
+    transition: 0.5s;
+}
+.row3{
+    margin-top: 30px;
+}
+.row3 .nen{
+    height: 500px;
+    position: relative;
+}
+.row3 .nen .bg{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-image: url(http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/italian-food-background-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+.row3 .nen .den{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0.6s;
+    width: 100%;
+    height: 100%;
+}
+.row3 .nen .chu{
+    position: relative;
+    color: #fff;
+    width: 60%;
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+}
+.row3 .nen .chu h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: .2em;
+    font-size: 2.9em;
+}
+.row3 .nen .chu p{
+    color: #fff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 18px;
+}
+.row3 .nen .chu .nut{
+    background-color: #7e4c2b;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    font-size: .97em;
+    letter-spacing: .03em;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    border: 1px solid transparent;
+    line-height: 2.4em;
+    min-height: 2.5em;
+    padding-top: 0px;
+    padding-right: 1.2em;
+    padding-bottom: 0px;
+    padding-left: 1.2em;
+}
+.row3 .nen .chu .nut span{
+    transform: translateX(0.75em);
+    display: inline-block;
+    transition: opacity .3s, transform .3s;
+}
+.row3 .nen .chu .nut i{
+    opacity: 0;
+    margin-right: -.15em;
+    margin-left: .4em;
+    transition: opacity .3s, transform .3s;
+    width: 1em;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+.row3 .nen .chu .nut:hover{
+    background-color: #754727;
+}
+.row3 .nen .chu .nut:hover span{
+    transform: translateX(0);
+}
+.row3 .nen .chu .nut:hover i{
+    margin-right: -.15em;
+    margin-left: .4em;
+    opacity: 1;
+}
+.row2 .than .anh1{
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px -4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: 0.5s;
+}
+.row2 .than .anh1:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.22);
+}
+.row2 .than .anh1 .a{
+    overflow: hidden;
+}
+.row2 .than .anh1 .a img{
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    max-width: 100%;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    height: auto !important;
+    z-index: -1;
+    transition: 0.5s;
+}
+.row2 .than .anh1:hover .a img{
+    transform: scale(1.1);
+}
+.row2 .than .anh1 .box{
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    padding-top: .7em;
+    padding-bottom: 1.4em;
+    width: 100%;
+    font-size: .9em;
+    color: #333;
+} 
+.row2 .than .anh1 .box .thucdon{
+    margin-top: .1em;
+    margin-bottom: .1em;
+    opacity: .7;
+    font-size: .75em;
+    line-height: 1.2;
+    letter-spacing: .05em;
+} 
+.row2 .than .anh1 .box .ga{
+    margin-top: .1em;
+    margin-bottom: .1em;
+    font-size: 15px;
+    display: block;
+    font-weight: bolder;
+    height: 20px;
+    cursor: pointer;
+    color: #7e4c2b;
+    line-height: 1.3;
+} 
+.row2 .than .anh1 .box .ga:hover{
+    color: #333;
+}
+.row{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+.row .col{
+    width: 100%;
+    padding: 0 15px 30px;
+    text-align: center;
+}
+.row .col .button{
+    border-radius: 6px;
+    padding: 10px 0px 0px 0px;
+    background-color: #7e4c2b;
+    margin-bottom: 1em;
+    color: white;
+    font-size: .97em;
+    letter-spacing: .03em;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 1px solid transparent;
+    line-height: 2.4em;
+    min-height: 2.5em;
+    padding: 0 1.2em;
+    margin-top: 0;
+    margin-right: 1em;
+    display: inline-block;
+    transition: 0.4s;
+}
+.row .col .button span{
+    transform: translateX(0.75em);
+    display: inline-block;
+    line-height: 1.6;
+    transition: opacity .3s, transform .3s;
+}
+.row .col .button i{
+    opacity: 0;
+    visibility: hidden;
+    margin-right: -.15em;
+    margin-left: .4em;
+    width: 1em;
+    line-height: 1.2;
+    display: inline-block;
+    transition: 0.4s;
+    transition: opacity .3s, transform .3s;
+}
+.row .col .button:hover{
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2); 
+}
+.row .col .button:hover span{
+    transform: translateX(0);
+}
+.row .col .button:hover i{
+    opacity: 1;
+    visibility: visible;
+}
+.ghi{
+    background-image: url(http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/08/bg-pattern.jpg);
+    max-width: 100%;
+    width: 100%;
+    background-size: initial;
+    background-position: 50% 50%;
+    background-repeat: repeat;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.ghi .nen{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.ghi .nen .than{
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-flow: row wrap;
+    align-self: center;
+    vertical-align: middle;
+}
+.ghi .nen .than .trai{
+    width: 100%;
+    display: block;
+    padding-right: 0px;
+}
+.ghi .nen .than .trai img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.ghi .nen .than .phai{
+    background-color: rgb(255, 255, 255);
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    height: auto;
+    margin: 0;
+    position: relative;
+    margin-bottom: 30px;
+}
+.ghi .nen .than .phai .bao{
+    padding: 20px 20px 0px 20px;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 0px;
+    position: relative;
+    flex: 1 0 auto;
+}
+.ghi .nen .than .phai .bao h2{
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 1.6em;
+    line-height: 1.3;
+    color: #555;
+    width: 100%;
+}
+.ghi .nen .than .phai .bao .form{
+    margin-bottom: 0px;
+}
+.ghi .nen .than .phai .bao .form .form-group{
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 0px;
+}
+.ghi .nen .than .phai .bao .form .form-group input{
+    border-radius: 0px;
+    border: 1px solid #ddd;
+    padding: 0 .75em;
+    height: 2.507em;
+    color: #333;
+    font-size: .97em;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+.ghi .nen .than .phai .bao .form .form-group input:hover{
+    box-shadow: inset 0 -1.8em 1em 0 rgba(0,0,0,0);
+}
+.ghi .nen .than .phai .bao .form-group{
+    padding-bottom: 0px;
+    display: inline-block;
+}
+.ghi .nen .than .phai .bao .form-group textarea{
+    border-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 0.7em;
+    border: 1px solid #ddd;
+    padding-right: 0.75em;
+    padding-bottom: 0px;
+    padding-left: 0.75em;
+    font-size: .97em;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    min-height: 120px;
+}
+.ghi .nen .than .phai .bao .form-group textarea:hover{
+    box-shadow: inset 0 -1.8em 1em 0 rgba(0,0,0,0);
+}
+.ghi .nen .than .phai .bao button{
+    border-radius: 0px;
+    background-color: #7e4c2b;
+    margin-left: 15px;
+    margin-bottom: 1em;
+    font-size: .97em;
+    letter-spacing: .03em;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    border: 1px solid transparent;   
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.ghi .nen .than .phai .bao button:hover{
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2); 
+}
+.row2 .than .tam{
+    box-shadow: none;
+    position: relative;
+}
+.row2 .than .anh1 .b{
+    box-shadow: 0 3px 6px -4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition: 0.5s;
+    background-color: #FFF;
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    display: block;
+}
+.row2 .than .tam:hover{
+    box-shadow: none;
+}
+.row2 .than .anh1 .b .a{
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    padding-top: 65%;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.row2 .than .anh1 .b:hover{
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.22);
+}
+.row2 .than .anh1 .b .a img{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    z-index: 1;
+}
+.row2 .than .anh1 .b .a .nut{
+    width: 42px;
+    height: 42px;
+    background-color: #7e4c2b;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    z-index: 1;
+    color: white;
+    font-weight: 600;
+    display: block;
+}
+.row2 .than .anh1 .b .a .nut1{
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+.row2 .than .anh1 .b .a .nut2{
+    font-size: 12px;
+}
+.row2 .than .anh1 .b .box{
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    text-align: left;
+    padding-top: .7em;
+    padding-bottom: 1.4em;
+    width: 100%;
+    font-size: .9em;
+}
+.row2 .than .anh1 .b .box h5{
+    height: 40px;
+    line-height: 20px;
+    display: block;
+    margin-top: .1em;
+    margin-bottom: .1em;
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #555;
+    width: 100%;
+    overflow: hidden;
+}
+.row2 .than .anh1 .b .box .duoi{
+    margin-top: .1em;
+    margin-bottom: .1em;
+    font-size: 15px;
+    color: #333;
+}
+.row2 .than .anh1 .b .box button{
+    background-color: #7e4c2b;
+    margin-top: 1em;
+    font-size: .8em;
+    display: inline-block;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bolder;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    padding: 0 1.2em;
+    max-width: 100%;
+    color: white;
+    line-height: 2.4em;
+}
+.row2 .than .anh1 .b .box button:hover{
+    box-shadow: inset 0 0 0 100px rgba(0,0,0,0.2); 
+}
+footer{
+    width: 100%;
+    display: block;
+}
+footer .tren{
+    background-image: url(http://mauweb.thietkewebbeta.com/khogiaodien/food01/wp-content/uploads/2019/09/travel-landscape-01.jpg);
+    color: white;
+    padding: 30px 0 0;
+}
+footer .tren .bao{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+footer .tren .bao .col{
+    margin-bottom: 1.5em;
+    padding: 0 15px 30px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: left;
+}
+footer .tren .bao .col span{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: .05em;
+}
+footer .tren .bao .col .thanh{
+    background-color: rgba(255,255,255,0.3);
+    height: 3px;
+    width: 100%;
+    max-width: 30px;
+    margin-bottom: 1em;
+    display: block;
+    margin-top: .66em;
+}
+footer .tren .bao .col .text{
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+footer .tren .bao .col ul{
+    width: 100%;
+    list-style-type: none;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+}
+footer .tren .bao .col ul li{
+    text-align: left;
+    padding-top: 6px;
+    padding-right: 0px;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    display: block;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    cursor: pointer;
+}
+footer .tren .bao .col ul .chon{
+    border: none;
+}
+footer .tren .bao .col p{
+    margin-bottom: 15px;
+    font-size: 15px;
+    display: block;
+}
+footer .duoi{
+    width: 100%;
+    background-color: #5b5b5b;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    font-size: .9em;
+}
+footer .duoi .container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgba(255,255,255,0.5);
+}
+footer .duoi .container .nho{
+    display: flex;
+    line-height: 1.6;
+}
+footer .duoi .container .nho p{
+    margin-bottom: 0px;
+}
+footer .duoi .container .nho span{
+    font-weight: bolder;
+    margin-left: 5px;
+}
+@media (max-width: 850px)
+{
+    header .header-w .top-bar .container ul{
+        display: none;
+    }
+    header .header-w .top-bar .container p{
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header .header-w .head .container .logo{
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        order: 2;
+    }
+    header .header-w .head .container .icon{
+        cursor: pointer;
+        opacity: 1;
+        visibility: visible;
+    }
+    header .header-w .head .container .icon .bt{
+        padding-left: 0.7em;
+        padding-right: .7em;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        background-color: #7e4c2b;
+        color: white;
+        border-radius: 5px;
+    }
+    header .header-w .head .container .icon .bt i{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 12px;
+    }
+    header .header-w .head .container .chu{
+        display: none;
+    }
+    #carouselId ol{
+        margin-top: -13px;
+    }
+    #carouselId .carousel-inner .carousel-item img{
+        max-width: 100%;
+    }
+    #carouselId .carousel-control-next{
+        left: 90%;
+    }
+    .row2 .than .anh img{
+        transform: scaleX(1.5);
+    }
+    .row2 .than .anh:hover img{
+        transform: scale(1.55,1.1);
+    }
+    .row3 .nen .chu{
+        top: 20%;
+    }
+    .row2 .than .anh1{
+        width: 49% !important;
+    }
+    footer .tren .bao{
+        display: block;
+    }
+    footer .tren .bao .col{
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 550px)
+{
+    header .header-w .head{
+        height: fit-content;
+    }
+    header .header-w .head .container .logo a img{
+        max-height: 70px;
+    }
+    .ngoai .row1 .main{
+        display: block;
+    }
+    .ngoai .row1 .main .left{
+        max-width: 100%;
+    }
+    .ngoai .row1 .main .right{
+        max-width: 100%;
+    }
+    .row2 .than{
+        display: block;
+    }
+    .row2 .than .anh{
+        width: 100% !important;
+    }
+    .row2 .than .anh img{
+        transform: scale(1);
+    }
+    .row3 .nen .chu{
+        top: 12%;
+    }
+    .row2 .than .anh1{
+        width: 49% !important;
+    }
+    .row2 .than1{
+        display: flex;
+    }
+    .ghi .nen .than{
+        display: block;
+    }
+    .ghi .nen .than .trai{
+        padding-bottom: 0px;
+    }
+    .row2 .than .tam{
+        width: 100% !important;
+    }
+    .row2 .than .anh1 .b .box h5{
+        font-size: 12px;
+        opacity: 0.8;
+    }
+    .row2 .than .anh1 .b .box p{
+        opacity: 0.8;   
+    }
+    footer .tren .bao{
+        display: block;
+    }
+}
